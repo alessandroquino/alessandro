@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problemas de la Educación en el Perú</title>
+</head>
+<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #FFFFFF;
+		}
+		header {
+			background-color: #11337C;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+		nav {
+			background-color: #00C3C6;
+			color: #fff;
+			padding: 10px;
+			text-align: left;
+			margin: 0px;
+		}
+		article{
+			background-color: #DEDEDE;
+			padding: 20px;
+			margin: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		section{
+			background-color: #DEDEDE;
+			padding: 20px;
+			margin: 20px;
+			border:	1px solid #ccc;
+			border-radius: 5px;
+		}
+		aside{
+			background-color: #9EC4E8;
+			color: #000000;
+			padding: 10px;
+			text-align: left;
+		}
+		footer{
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+
+        .form-container {
+            margin-right: 20px;
+        }
+
+        .form-container input {
+            margin: 5px 0;
+            width: 100%;
+        }
+
+	</style>
+	 <script>
+        function guardarDatos() {
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var ciudad = document.getElementById("ciudad").value;
+            var pais = document.getElementById("pais").value;
+        }
+
+        function buscarGoogle() {
+            var query = document.getElementById("busqueda").value;
+            var url = "https://www.google.com/search?q=" + encodeURIComponent(query);
+            // Redirigir a la página de búsqueda de Google
+            window.location.href = url;
+        }
+    </script>
+<body>
+	<header>
+		<h1>Problemas de la Educación en el Perú</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="infraestructura.html">Infraestructura</a></li>
+			<li><a href="sistemaeducativo.html">Sistema educativo</a></li>
+			<li><a href="profesores.html">Profesores</a></li>
+		</ul>
+	</nav>
+	<article>
+		<h2>Infraestructura</h2>
+		<p>Para empezar, la educación en general en Perú tiene pocos recursos. Hay una brecha muy grande en la cual se necesitaría invertir mil millones de dólares anualmente durante 20 años para cerrarla, y pese a esto, la brecha en los 2 últimos años ha aumentado en diez millones de dólares. El setenta por ciento de colegios en Perú no tienen acceso a internet, no tienen acceso a algo tan básico que es el acceso a la tecnología, lo cual es mucho más preocupante cuando el mundo está en una etapa en donde la educación es principalmente digital, ya estamos muy por detrás. El setenta y seis por ciento de los colegios nacionales tienen la necesidad de ser reformados estructuralmente o ser demolidos y la gran mayoría carece de por lo menos un servicio básico, como el agua, electricidad o seguridad. Estas estadísticas son muy alarmantes y nos muestran la calidad de servicio que ofrece el estado a las familias que no tienen los recursos necesarios para poder inscribir a sus hijos a un colegio privado.</p>
+	</article>
+	<section>
+
+		<h2>Sistema Educativo</h2>
+		<p>En segundo lugar, un colegio o universidad privada no te asegura una educación ideal, el sistema educativo también tiene que ser reformado. En la mayoría de los colegios tanto estatales como privados se maneja un método bastante tradicional que es el de memorización, cuando en realidad debería cambiar la forma en que se educa a los estudiantes. Se debería apostar por un sistema que permita el desarrollo de las habilidades, sobre todos aquellas que nos permitan adaptarnos a los cambios, principalmente ahora que la automatización de los trabajos está profundamente enraizada en la economía del futuro, por ende, es importante cambiar la forma en que se enseña en las escuelas y universidades peruanas. Charles Darwin decía “No es la especie más fuerte la que sobrevive, ni la más inteligente, sino la que más responde a los cambios”, ese es el objetivo que se debería tener en términos de aprendizaje. Por ejemplo, en otros países de primer mundo, solo tienen unos cuantos cursos muy generales, pero a la vez muy didácticos y más prácticos. Los estudiantes tienen la opción de escoger la manera en que se van a educar para su futuro, potenciando así sus características. En comparación con el sistema que se maneja en Latinoamérica, acá la educación es más teórica y menos práctica, y los estudiantes son cargados de más cursos que son capaces de cortar las alas de estos.</p>
+		<div class="image-container">
+	</section>
+	<section>
+		   <div class="form-container">
+            <h2>Guardar Datos</h2>
+            <form onsubmit="guardarDatos(); return false;">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido"><br>
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad"><br>
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais"><br>
+                <input type="submit" value="Guardar">
+            </form>
+        </div>
+	</section>
+	<aside>
+		<h3>Recursos Adicionales</h3>
+		<ul>
+			<li><a href="#">Infraestructura Educativa, la otra pandemia del Perú</li>
+			<li><a href="#">¿Cómo es el sistema educativo peruano?</li>
+		</ul>
+	</aside>
+	<aside>
+		<h3>Buscar en Google</h3>
+        <form onsubmit="buscarGoogle(); return false;">
+            <input type="text" id="busqueda" placeholder="Buscar en Google">
+            <input type="submit" value="Buscar">
+        </form>
+		<h3>Video de youtube</h3>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/4L6eLuexfkA?si=RT1Y48JtHr4WJO2G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</aside>
+	<footer>
+		&copy; 2023 Problemas de la Educacióon en el Perú
+	</footer>
+</body>
+</html>
